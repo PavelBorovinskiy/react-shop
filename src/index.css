@@ -1,13 +1,151 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.nav-wrapper {
+  padding: 0 1rem;
+}
+
+.github-icon {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 20%;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+  }
+
+  /* .hide-on-med-and-down {
+    display: block !important;
+  } */
+}
+
+.content {
+  min-height: calc(100vh - 146.5px);
+  padding: 2rem 0;
+}
+
+.page-footer {
+  padding: 2rem 0;
+}
+
+.goods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+.cart-grow {
+  flex-grow: 1;
+}
+.cart {
+  position: fixed;
+  top: 6.3rem;
+  right: 2rem;
+  z-index: 997;
+  cursor: pointer;
+  color: rgb(214, 21, 21);
+}
+
+.cart-quantity {
+  position: absolute;
+  top: -0.7rem;
+  right: -1rem;
+  display: block;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: 21px;
+  text-align: center;
+}
+
+.size-icon {
+  position: relative;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 992px) {
+  .cart {
+    top: 1.2rem;
+    color: #fff;
+  }
+}
+
+.basket-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+
+  border-radius: 1rem;
+
+  width: 50rem;
+  max-width: 95%;
+
+  animation: show 0.3s ease-in-out;
+}
+@keyframes show {
+  from {
+    left: 70%;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+.basket-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.icon-quantity {
+  vertical-align: middle;
+  cursor: pointer;
+  color: #26a69a;
+}
+.basket-delete {
+  cursor: pointer;
+}
+.basket-delete-all {
+  cursor: pointer;
+}
+.btn-design {
+  margin: 1rem;
+}
+
+#toast-container {
+  top: 1.1rem !important;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fade-in 0.25s ease-in-out;
+  width: 300px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
