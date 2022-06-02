@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pavelborovinskiy.github.io/react-shop/static/css/main.2cb8027b.css",
+    "main.js": "/pavelborovinskiy.github.io/react-shop/static/js/main.c39f26a9.js",
+    "index.html": "/pavelborovinskiy.github.io/react-shop/index.html",
+    "main.2cb8027b.css.map": "/pavelborovinskiy.github.io/react-shop/static/css/main.2cb8027b.css.map",
+    "main.c39f26a9.js.map": "/pavelborovinskiy.github.io/react-shop/static/js/main.c39f26a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cb8027b.css",
+    "static/js/main.c39f26a9.js"
+  ]
+}
