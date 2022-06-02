@@ -124,7 +124,7 @@ const Shop = () => {
   return (
     <main className="container content">
       <Cart quantity={order.length} handleBasket={handleBasket} />
-      {loading ? (
+      { !goods.length || loading? (
         <Preloading />
       ) : (
         <GoodsList goods={goods} addToBasket={addToBasket} />
