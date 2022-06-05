@@ -6,7 +6,7 @@ const Header = () => {
     <div className="navbar-fixed">
       <nav>
         <div className="nav-wrapper red accent-4">
-          <a href="/" className="brand-logo">
+          <a href="#!" className="brand-logo">
             React Shop
           </a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
